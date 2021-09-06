@@ -1,4 +1,4 @@
 # movee
 Interactive map of Moscow cinema locations
 
-An application for walking around the cinema locations of Moscow, where you can find out information about the film in the context of the city.
+Movee is an application with a map of cinematographic locations of Moscow and other world capitals in the future. The application displays the filming locations captured in the frames of a particular movie. You can walk routes, read interesting facts about films and watch what films were filmed nearby with the user's geolocation
