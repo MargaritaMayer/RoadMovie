@@ -10,4 +10,4 @@ Python 3.5
 Google colab
 
 # Authors
-Margarita Mayer, Polina Romanenkova.
+Margarita Mayer, Polina Romanenkova
