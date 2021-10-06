@@ -14,7 +14,7 @@ Margarita Mayer
 
 telegram: @ritermayer
 
-github: @MargaritaMayer
+github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 
 Polina Romanenkova
 
