@@ -12,9 +12,12 @@ Google colab
 # Authors
 Margarita Mayer
 
-telegram: @ritermayer
+telegram: [@ritermayer](https://t.me/ritermayer)
 
 github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 
 Polina Romanenkova
 
+telegram: [@stereopolina](https://t.me/stereopolina)
+
+github: ..
