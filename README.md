@@ -11,6 +11,10 @@ Google colab
 
 # Authors
 Margarita Mayer
+
 telegram: @ritermayer
+
 github: @MargaritaMayer
+
 Polina Romanenkova
+
