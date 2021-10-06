@@ -10,7 +10,7 @@ Python 3.5
 Google colab
 
 # Authors
-Margarita Mayer
+  Margarita Mayer
 
 telegram: [@ritermayer](https://t.me/ritermayer)
 
