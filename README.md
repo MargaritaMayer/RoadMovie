@@ -1,10 +1,7 @@
 # RoadMovie
 
 # Description
-Interactive map of Moscow cinema locations
-
-RoadMovie is an application with a map of cinematographic locations of Moscow and other world capitals in the future. The application displays the filming locations captured in the frames of a particular movie. You can walk routes, read interesting facts about films and watch what films were filmed nearby with the user's geolocation
-
+Do you like watching movies? Do you often go for walks in Moscow? Thanks to the RoadMovie app, you will be able to visit the most significant scenes of movies shot in Moscow. The app makes a route for the selected film, and all you have to do is to walk along the route, enjoy and feel like the main character in the film.
 
 # Tools
 Python 3.5
