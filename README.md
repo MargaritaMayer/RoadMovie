@@ -18,12 +18,12 @@ Google colab
 ## Authors
 Margarita Mayer
 
--telegram: [@ritermayer](https://t.me/ritermayer)
+- telegram: [@ritermayer](https://t.me/ritermayer)
 
--github: [@MargaritaMayer](https://github.com/MargaritaMayer)
+- github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 
 Polina Romanenkova
 
--telegram: [@stereopolina](https://t.me/stereopolina)
+- telegram: [@stereopolina](https://t.me/stereopolina)
 
--github: [@stereopolina](https://github.com/stereopolina)
+- github: [@stereopolina](https://github.com/stereopolina)
