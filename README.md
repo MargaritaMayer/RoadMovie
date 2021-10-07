@@ -20,4 +20,4 @@ Polina Romanenkova
 
 telegram: [@stereopolina](https://t.me/stereopolina)
 
-github: ..
+github: [@stereopolina](https://github.com/stereopolina)
