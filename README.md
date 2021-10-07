@@ -16,9 +16,8 @@ Use our app if you like to:
 ## Built With
 Android Studio, Flutter
 
-## Artifact
+## Rational Unified Process (RUP)
 You can see artifact using the [link](url).
-
 
 
 
