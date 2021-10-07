@@ -17,13 +17,8 @@ Google colab
 
 ## Authors
 Margarita Mayer
-
-telegram: [@ritermayer](https://t.me/ritermayer)
-
-github: [@MargaritaMayer](https://github.com/MargaritaMayer)
-
+-telegram: [@ritermayer](https://t.me/ritermayer)
+-github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 Polina Romanenkova
-
-telegram: [@stereopolina](https://t.me/stereopolina)
-
-github: [@stereopolina](https://github.com/stereopolina)
+-telegram: [@stereopolina](https://t.me/stereopolina)
+-github: [@stereopolina](https://github.com/stereopolina)
