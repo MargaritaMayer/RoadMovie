@@ -35,12 +35,9 @@ You can see artifact using the [link](url).
 ![imgonline-com-ua-Resize-wsxhbFeRoN5EMSys](https://user-images.githubusercontent.com/69847456/136557916-c4df551a-9c51-4bc3-96e5-ec3acc0033fe.jpg)
 
 ## Contribution
-Currently, the project is in heavy development and may change a lot in the nearest future.
+Feel free to open a pull request, suggest a feature, or report a bug by creating an issue
 
-We do not recommend contributing at this stage.
 
-Later, when project becomes more stable, we may create some contribution guidelines for everyone to use.
-## Acknowledgment
 
 The project is made as a part of Software Systems Analysis and Design Course (S21) at Innopolis University.
 
@@ -48,12 +45,10 @@ The project is made as a part of Software Systems Analysis and Design Course (S2
 
 Margarita Mayer
 
-- telegram: [@ritermayer](https://t.me/ritermayer)
 
 - github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 
 Polina Romanenkova
 
-- telegram: [@stereopolina](https://t.me/stereopolina)
 
 - github: [@stereopolina](https://github.com/stereopolina)
