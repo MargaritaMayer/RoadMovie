@@ -1,6 +1,6 @@
-# RoadMovie🎥
+# RoadMovie🎥 ![Road Movie](https://user-images.githubusercontent.com/69847456/136559341-e1c29dc2-6b1a-4d01-8a69-238889438061.png)
+
 This is a student project that allows people who are in Moscow to explore the filming locations of Moscow films.
-![Road Movie](https://user-images.githubusercontent.com/69847456/136559341-e1c29dc2-6b1a-4d01-8a69-238889438061.png)
 
 
 Table of Contents
