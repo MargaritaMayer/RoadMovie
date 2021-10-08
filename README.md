@@ -19,8 +19,9 @@ Use our app if you like to:
 
 
 ## Built With
-- Android Studio
-- Flutter
+- Flutter: UI cross platform applications for Android, IOS , and web
+- Visual Studio Code and Android Studio are used as an IDE
+
 
 ## Rational Unified Process (RUP)
 You can see artifact using the [link](url).
