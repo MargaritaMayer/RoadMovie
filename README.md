@@ -37,7 +37,8 @@ You can see artifact using the [link](url).
 
 ## Static view Diagram
 ![1](https://user-images.githubusercontent.com/69847456/136613803-9edded63-893b-4862-ba57-51f54cb8cf21.png)
-
+## Dynamic view Diagram
+![12](https://user-images.githubusercontent.com/69847456/136620069-c108a7db-b6c8-4337-ac8e-7ee20bdbd327.png)
 
 ## Contribution
 Feel free to open a pull request, suggest a feature, or report a bug by creating an issue
