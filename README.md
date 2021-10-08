@@ -23,12 +23,11 @@ Use our app if you like to:
 You can see artifact using the [link](url).
 
 ## Sequence Diagram
-![photo_2021-10-08_15-35-08](https://user-images.githubusercontent.com/69847456/136557728-6d4b86bd-2eca-41fd-9227-7b945d1f278c.jpg)
+![imgonline-com-ua-Resize-wsxhbFeRoN5EMSys](https://user-images.githubusercontent.com/69847456/136557916-c4df551a-9c51-4bc3-96e5-ec3acc0033fe.jpg)
 
-
-![imgonline-com-ua-Resize-V1AihIASoYm86](https://user-images.githubusercontent.com/69847456/136539627-27da7ffb-fe57-4d00-8c0c-3aeb306b64f7.jpg)
 
 ## Authors
+
 Margarita Mayer
 
 - telegram: [@ritermayer](https://t.me/ritermayer)
