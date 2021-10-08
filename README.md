@@ -35,6 +35,10 @@ You can see artifact using the [link](url).
 ## Sequence Diagram
 ![imgonline-com-ua-Resize-wsxhbFeRoN5EMSys](https://user-images.githubusercontent.com/69847456/136557916-c4df551a-9c51-4bc3-96e5-ec3acc0033fe.jpg)
 
+## Static view Diagram
+![1](https://user-images.githubusercontent.com/69847456/136613803-9edded63-893b-4862-ba57-51f54cb8cf21.png)
+
+
 ## Contribution
 Feel free to open a pull request, suggest a feature, or report a bug by creating an issue
 
