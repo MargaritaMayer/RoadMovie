@@ -21,8 +21,7 @@ Android Studio, Flutter
 ## Rational Unified Process (RUP)
 You can see artifact using the [link](url).
 
-
-![photo_2021-10-08_13-07-23](https://user-images.githubusercontent.com/69847456/136538578-b8233f0e-11c7-4bdb-8b7b-246823a143eb.jpg)
+![imgonline-com-ua-Resize-V1AihIASoYm86](https://user-images.githubusercontent.com/69847456/136539627-27da7ffb-fe57-4d00-8c0c-3aeb306b64f7.jpg)
 
 ## Authors
 Margarita Mayer
