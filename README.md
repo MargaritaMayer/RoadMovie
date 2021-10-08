@@ -1,11 +1,10 @@
 # RoadMovie🎥
+This is a student project that allows people who are in Moscow to explore the filming locations of Moscow films.
 ![Road Movie](https://user-images.githubusercontent.com/69847456/136559341-e1c29dc2-6b1a-4d01-8a69-238889438061.png)
 
 
 Table of Contents
 
-## Description
-Do you like watching movies? Do you often go for walks in Moscow? Thanks to the RoadMovie app, you will be able to visit the most significant scenes of movies shot in Moscow. The app makes a route for the selected film, and all you have to do is to walk along the route, enjoy and feel like the main character in the film.
 
 ![imgonline-com-ua-Resize-WA3vGrbSOCjvw](https://user-images.githubusercontent.com/69847456/136539361-c63901e9-cfbc-4cfb-88e2-8821bc24f591.jpg)
 
