@@ -25,6 +25,12 @@ You can see artifact using the [link](url).
 ## Sequence Diagram
 ![imgonline-com-ua-Resize-wsxhbFeRoN5EMSys](https://user-images.githubusercontent.com/69847456/136557916-c4df551a-9c51-4bc3-96e5-ec3acc0033fe.jpg)
 
+## Contribution
+Feel free to open a pull request, suggest a feature, or report a bug by creating an issue
+
+## Acknowledgment
+
+The project is made as a part of Software Systems Analysis and Design Course (S21) at Innopolis University.
 
 ## Authors
 
