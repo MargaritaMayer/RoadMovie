@@ -4,7 +4,7 @@ Table of Contents
 ## Description
 Do you like watching movies? Do you often go for walks in Moscow? Thanks to the RoadMovie app, you will be able to visit the most significant scenes of movies shot in Moscow. The app makes a route for the selected film, and all you have to do is to walk along the route, enjoy and feel like the main character in the film.
 
-![photo_2021-10-08_13-05-38](https://user-images.githubusercontent.com/69847456/136538638-7e6e4ca3-3299-4ce5-9805-8fcaaeda321d.jpg)
+![imgonline-com-ua-Resize-WA3vGrbSOCjvw](https://user-images.githubusercontent.com/69847456/136539361-c63901e9-cfbc-4cfb-88e2-8821bc24f591.jpg)
 
 ## Motivation
 
