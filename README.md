@@ -1,4 +1,4 @@
-![imgonline-com-ua-Resize-Swxc8raXDRnfM](https://user-images.githubusercontent.com/69847456/136565737-cef49761-c25e-4f60-9137-506e81bd5d32.jpg)
+![imgonline-com-ua-Resize-MMwxXv0sZbT9qU](https://user-images.githubusercontent.com/69847456/136565916-9f51ed57-253e-4faf-a6c8-ed87c4e65264.jpg)
 
 
 Road Movie is a student project that allows people who are in Moscow to explore the filming locations of Moscow films.
