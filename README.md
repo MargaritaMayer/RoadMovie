@@ -37,7 +37,7 @@ You can see artifact using the [link](url).
 ## Contribution
 Feel free to open a pull request, suggest a feature, or report a bug by creating an issue
 
-
+## Acknowledgment
 
 The project is made as a part of Software Systems Analysis and Design Course (S21) at Innopolis University.
 
