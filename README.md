@@ -30,8 +30,9 @@ Use our app if you like to:
 
 ## Setup
 
-## Rational Unified Process (RUP)
-You can see artifact using the [link](url).
+## Design Documentation
+You can read the design documentation using this [link](url)
+
 
 ## Sequence Diagram
 ![imgonline-com-ua-Resize-wsxhbFeRoN5EMSys](https://user-images.githubusercontent.com/69847456/136557916-c4df551a-9c51-4bc3-96e5-ec3acc0033fe.jpg)
