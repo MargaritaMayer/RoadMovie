@@ -30,8 +30,8 @@ Use our app if you like to:
 
 ## Setup
 
-## Design Documentation
-You can read the design documentation using this [link](url)
+## Documentation
+You can read more documentation about the project using this [link](https://docs.google.com/document/d/1J3uiANWerFxjVFidI1HKw_nZxwh-PrAqBGSBybsXumU/edit?usp=sharing)
 
 
 ## Sequence Diagram
