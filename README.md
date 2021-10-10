@@ -14,14 +14,14 @@ There are many film fans in Russia who love films made in Moscow. Many of the fa
 
 ## For Whom
 Use our app if you like to:
-- you have your favorite movies shot in Moscow
-- you are in Moscow
+-...you have your favorite movies shot in Moscow
+-...you are in Moscow
 
 ## Demo 
 
 ## Built With
-- Flutter: UI cross platform applications for Android, IOS , and web
-- Visual Studio Code and Android Studio are used as an IDE
+-...Flutter: UI cross platform applications for Android, IOS , and web
+-...Visual Studio Code and Android Studio are used as an IDE
 
 ## Setup
 
