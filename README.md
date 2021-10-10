@@ -33,8 +33,8 @@ Note: for this project you have to have a billing account and for your API Maps 
 If you do not know, how to do that, follow these links:
 [1](https://developers.google.com/maps/documentation/javascript/directions),
 [2](https://www.youtube.com/watch?v=2_HZObVbe-g).
-5. Open the folder in a any IDE for Flutter and Dart usage, we suggest Android Studio and VS Code.
-6. If you are not familiar with opening a project in any of these applications, use following links:
+5.   Open the folder in a any IDE for Flutter and Dart usage, we suggest Android Studio and VS Code.
+6.   If you are not familiar with opening a project in any of these applications, use following links:
 [1](https://www.youtube.com/watch?v=g3rm0lxX6Eg),
 [2](https://www.youtube.com/watch?v=UE1KgspvE4E).
 
