@@ -26,11 +26,13 @@ Developers.
 
 Responsibilities:
 -   Developing an app
+
 Maintainers.
 
 Responsibilities:
 -   Test the system, check it for errors
 -   Fix mistakes, keep the system working
+
 Users
 
 Responsibilities:
