@@ -23,7 +23,7 @@ Use our app if:
 ## Setup
 
 ## Documentation
-You can read more documentation about the project using this [link](https://docs.google.com/document/d/1J3uiANWerFxjVFidI1HKw_nZxwh-PrAqBGSBybsXumU/edit?usp=sharing)
+You can read more documentation about the project using this [link](https://github.com/MargaritaMayer/RoadMovie/blob/main/RoadMovie.pdf)
 
 It containing:
 -   Project Glossary
