@@ -1,10 +1,10 @@
-#RoadMovie 
+# RoadMovie 
 Authors: Margarita Mayer, Polina Romanenkova
 
-##What is it?
+## What is it?
 RoadMovie is an application that allows people who are in Moscow to explore the filming locations of Moscow films.
 
-##Project glossary:
+## Project glossary:
 In the glossary you can find the working definitions for the RoadMovie application.
 -   Pinch and stretch - a "compressing" and "stretching" the movement of the fingers, allowing, respectively, to reduce or increase the scale of the map.
 -   Map viewing - zooming in and out of the map.
