@@ -56,7 +56,7 @@ It containing:
 -   Version History
 
 ## UML Class Diagram
-You can find Class Diagram [here]
+You can find Class Diagram [here](https://github.com/MargaritaMayer/RoadMovie/blob/main/out/lib/classDiagramUML/classDiagram.png)
 
 ## UML Sequence Diagram
 ![imgonline-com-ua-Resize-wpknnBoZkG](https://user-images.githubusercontent.com/69847456/136694708-9726ecc1-10f6-4639-965a-c910d872d99a.jpg)
