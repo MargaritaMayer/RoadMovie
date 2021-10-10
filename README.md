@@ -24,6 +24,7 @@ Use our app if:
 
 ## Documentation
 You can read more documentation about the project using this [link](https://docs.google.com/document/d/1J3uiANWerFxjVFidI1HKw_nZxwh-PrAqBGSBybsXumU/edit?usp=sharing)
+
 It containing:
 -   Project Glossary
 -   Information about stakeholders
