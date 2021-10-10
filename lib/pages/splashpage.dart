@@ -15,9 +15,16 @@ class SplashPage extends StatelessWidget {
     });
     return Scaffold(
         body: Container(
-            color: AppColors.MAIN_COLOR,
+            color: AppColors.NEXT_COLOR,
             child: Center(
-              child: Icon(Icons.favorite, color: Colors.white, size: 100),
+              child: Container(
+                  width: 220,
+                  height: 220,
+                  color: Colors.transparent,
+                  alignment: Alignment.center,
+                  child: Image.asset('assets/images/welcome.png')
+                  // Icon(Icons.favorite, color: Colors.white, size: 100)
+                  ),
             )));
   }
 }

@@ -1,158 +1,77 @@
 // // ignore_for_file: prefer_const_constructors
 
 import 'dart:async';
+import 'package:flutter_application_4/helpers/appcolors.dart';
+import 'package:flutter_application_4/helpers/utilspoints.dart';
 import 'package:flutter_application_4/models/category.dart';
+import 'package:flutter_application_4/models/pointcategory.dart';
 import 'package:flutter_application_4/widgets/pointinfo.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 
-// const LatLng SOURCE_LOCATION = LatLng(55.751776945, 37.6163721083);
-// const LatLng DEST_LOCATION = LatLng(55.751776980, 37.6163721183);
-// const double CAMERA_ZOOM = 16;
-// const double CAMERA_TILT = 80;
-// const double CAMERA_BEARING = 30;
-// // const double PIN_VISIBLE_POSITION = 20;
-// // const double PIN_INVISIBLE_POSITION = -220;
+String YOUR_API = '<YOUR_API>';
 
-// class Mappage extends StatefulWidget {
-//   // Mappage({Key key}) : super(key: key);
-//   Category selectedCategory;
-//   // Mappage({this.selectedCategory});
-//   @override
-//   _MappageState createState() => _MappageState();
-// }
-
-// class _MappageState extends State<Mappage> {
-//   LatLng currentLocation;
-//   LatLng destinationLocation;
-//   BitmapDescriptor sourceIcon;
-//   BitmapDescriptor destinationIcon;
-//   Set<Marker> _markers = Set<Marker>();
-//   // final Geolocator _geolocator = Geolocator()..forceAndroidLocationManager;
-//   Completer<GoogleMapController> _controller = Completer();
-
-//   @override
-//   void initState() {
-//     super.initState();
-
-//     this.setInitialLocation();
-//   }
-
-//   void setSourceAndDestinationMarkerIcons(BuildContext context) async {
-//     sourceIcon = await BitmapDescriptor.fromAssetImage(
-//         ImageConfiguration(devicePixelRatio: 2.0), '/assets/images/icon.png');
-
-//     destinationIcon = await BitmapDescriptor.fromAssetImage(
-//         ImageConfiguration(devicePixelRatio: 2.0), '/assets/images/icon2.png');
-//   }
-
-//   static final CameraPosition _moscow = CameraPosition(
-//     target: LatLng(55.781776936, 37.6163721084),
-//     zoom: 13,
-//   );
-
-//   void setInitialLocation() {
-//     currentLocation =
-//         LatLng(SOURCE_LOCATION.latitude, SOURCE_LOCATION.longitude);
-
-//     destinationLocation =
-//         LatLng(DEST_LOCATION.latitude, DEST_LOCATION.longitude);
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     this.setSourceAndDestinationMarkerIcons(context);
-//     return Scaffold(
-//         body: Stack(children: [
-//       GoogleMap(
-//         mapType: MapType.normal,
-//         markers: _markers,
-//         initialCameraPosition: _moscow,
-//         myLocationButtonEnabled: true,
-//         onMapCreated: (GoogleMapController controller) {
-//           _controller.complete(controller);
-//           showPinsOnMap();
-//         },
-//       ),
-//       // Text(widget.selectedCategory.name)
-//     ]));
-//   }
-
-//   void showPinsOnMap() {
-//     setState(() {
-//       _markers.add(Marker(
-//           markerId: MarkerId('soursePin'),
-//           position: currentLocation,
-//           icon: sourceIcon));
-
-//       _markers.add(Marker(
-//           markerId: MarkerId('destinationPin'),
-//           position: destinationLocation,
-//           icon: destinationIcon));
-//     });
-//   }
-// }
-const LatLng CAMERA_LOCATION = LatLng(55.75272615341363, 37.65665291369295);
-const LatLng SOURCE_LOCATION = LatLng(55.75272615341363, 37.65665291369295);
-const LatLng DEST_LOCATION = LatLng(55.82875656783303, 37.69921625006431);
 const double CAMERA_ZOOM = 13;
 const double CAMERA_TILT = 80;
 const double CAMERA_BEARING = 30;
-const double PIN_VISIBLE_POSITION = 20;
-const double PIN_INVISIBLE_POSITION = -220;
 
 class MapPage extends StatefulWidget {
+  Category selectedCategory;
+  MapPage({Key key, this.selectedCategory}) : super(key: key);
+
   @override
   _MapPageState createState() => _MapPageState();
 }
 
 class _MapPageState extends State<MapPage> {
+  List<PointCategory> pointsList;
   Completer<GoogleMapController> _controller = Completer();
-  BitmapDescriptor sourceIcon;
-  BitmapDescriptor destinationIcon;
-  Set<Marker> _markers = Set<Marker>();
-  // double pinPillPosition = PIN_VISIBLE_POSITION;
+
+  BitmapDescriptor bestPoint;
+  BitmapDescriptor middlePoint;
+  BitmapDescriptor lowPoint;
+
   LatLng currentLocation;
   LatLng destinationLocation;
-  // bool userBadgeSelected = false;
 
+  Set<Marker> _markers = Set<Marker>();
   Set<Polyline> _polylines = Set<Polyline>();
+  Set<Polygon> _polygones = {};
   List<LatLng> polylineCoordinates = [];
   PolylinePoints polylinePoints;
+  PolylineResult result;
 
   @override
   void initState() {
     super.initState();
-
     polylinePoints = PolylinePoints();
 
     // set up initial locations
-    this.setInitialLocation();
+    // this.setInitialLocation();
   }
 
   void setSourceAndDestinationMarkerIcons(BuildContext context) async {
-    sourceIcon = await BitmapDescriptor.fromAssetImage(
+    bestPoint = await BitmapDescriptor.fromAssetImage(
         ImageConfiguration(devicePixelRatio: 2.0), 'assets/images/icon1.png');
 
-    destinationIcon = await BitmapDescriptor.fromAssetImage(
+    middlePoint = await BitmapDescriptor.fromAssetImage(
         ImageConfiguration(devicePixelRatio: 2.0), 'assets/images/icon2.png');
+
+    lowPoint = await BitmapDescriptor.fromAssetImage(
+        ImageConfiguration(devicePixelRatio: 2.0), 'assets/images/icon3.png');
   }
 
-  void setInitialLocation() {
-    currentLocation =
-        LatLng(SOURCE_LOCATION.latitude, SOURCE_LOCATION.longitude);
+  // void setInitialLocation() {
+  //   currentLocation =
+  //       LatLng(SOURCE_LOCATION.latitude, SOURCE_LOCATION.longitude);
 
-    destinationLocation =
-        LatLng(DEST_LOCATION.latitude, DEST_LOCATION.longitude);
-  }
+  //   destinationLocation =
+  //       LatLng(DEST_LOCATION.latitude, DEST_LOCATION.longitude);
+  // }
 
   @override
   Widget build(BuildContext context) {
-    // CategorySelectionService catSelection = Provider.of<CategorySelectionService>(context, listen: false);
-    // widget.subCategory = catSelection.selectedSubCategory;
-
     this.setSourceAndDestinationMarkerIcons(context);
 
     // ignore: prefer_const_constructors
@@ -160,7 +79,7 @@ class _MapPageState extends State<MapPage> {
         zoom: CAMERA_ZOOM,
         tilt: CAMERA_TILT,
         bearing: CAMERA_BEARING,
-        target: CAMERA_LOCATION);
+        target: widget.selectedCategory.points[0].coordinates);
 
     return Scaffold(
         body: Stack(
@@ -171,6 +90,7 @@ class _MapPageState extends State<MapPage> {
             compassEnabled: false,
             tiltGesturesEnabled: false,
             polylines: _polylines,
+            polygons: _polygones,
             markers: _markers,
             mapType: MapType.normal,
             initialCameraPosition: initialCameraPosition,
@@ -182,99 +102,102 @@ class _MapPageState extends State<MapPage> {
             },
           ),
         ),
+        Container(
+            padding:
+                const EdgeInsets.only(top: 33, left: 10, bottom: 0, right: 0),
+            alignment: Alignment.topLeft,
+            // width: 100,
+            child: Material(
+                color: AppColors.MAIN_COLOR,
+                child: InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Container(
+                        // width: 200,
+                        padding: const EdgeInsets.all(10),
+                        child: const Text(
+                          'MENU',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontFamily: 'Futura',
+                              color: AppColors.LAST_COLOR,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        )))))
       ],
     ));
   }
 
+  BitmapDescriptor iconReturn(String number) {
+    if (number == '1') {
+      return lowPoint;
+    }
+    if (number == '2') {
+      return middlePoint;
+    }
+    if (number == '3') {
+      return bestPoint;
+    }
+  }
+
   void showPinsOnMap() {
+    pointsList = UtilsPoints.getPoints(widget.selectedCategory.number);
+
     setState(() {
-      _markers.add(Marker(
-          markerId: MarkerId('sourcePin'),
-          position: currentLocation,
-          icon: sourceIcon,
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => PointInfo()));
-          }));
-
-      _markers.add(Marker(
-          markerId: MarkerId('destinationPin'),
-          position: destinationLocation,
-          icon: destinationIcon,
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => PointInfo()));
-          }));
-
-      _markers.add(Marker(
-          markerId: MarkerId('anotherPin'),
-          position: LatLng(55.82875456183303, 37.69721625006431),
-          icon: destinationIcon,
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => PointInfo()));
-          }));
-
-      _markers.add(Marker(
-          markerId: MarkerId('another2Pin'),
-          position: LatLng(55.82375656783303, 37.69923625106431),
-          icon: destinationIcon,
-          onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => PointInfo()));
-          }));
+      for (int i = 0; i < pointsList.length; i++) {
+        _markers.add(Marker(
+            markerId: MarkerId(pointsList[i].name),
+            position: pointsList[i].coordinates,
+            icon: iconReturn(pointsList[i].numberOfPointColor),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => PointInfo(
+                            info: pointsList[i],
+                          )));
+            }));
+      }
     });
   }
-  // setPolylines() async {
-  //  List<PointLatLng> result = await
-  //     polylinePoints?.getRouteBetweenCoordinates(
-  //        "AIzaSyB-k5ZfbwTabCJhK8pqeNMY3gY4Ze7-Aec",
-  //        SOURCE_LOCATION.latitude,
-  //        SOURCE_LOCATION.longitude,
-  //        DEST_LOCATION.latitude,
-  //        DEST_LOCATION.longitude);
-  //  if(result.isNotEmpty){
-  //     // loop through all PointLatLng points and convert them
-  //     // to a list of LatLng, required by the Polyline
-  //     result.forEach((PointLatLng point){
-  //        polylineCoordinates.add(
-  //           LatLng(point.latitude, point.longitude));
-  //     });
-  //  }
-  //  setState(() {
-  //     // create a Polyline instance
-  //     // with an id, an RGB color and the list of LatLng pairs
-  //     Polyline polyline = Polyline(
-  //        polylineId: PolylineId('polyLine'),
-  //        color: Color.fromARGB(255, 40, 122, 198),
-  //        points: polylineCoordinates
-  //     );
 
-  //     // add the constructed polyline as a set of points
-  //     // to the polyline set, which will eventually
-  //     // end up showing up on the map
-  //     _polylines.add(polyline);
-  //   });
+  PolylineResult setMultiplePolylines(point1, point2) {
+    // pointsList = Utils.getPoints();
+    PolylineResult result = polylinePoints.getRouteBetweenCoordinates(
+        YOUR_API,
+        PointLatLng(point1.latitude, point1.longitude),
+        PointLatLng(point2.latitude, point2.longitude)) as PolylineResult;
+    return result;
+  }
 
   void setPolylines() async {
-    PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-        'AIzaSyDY1HsMJV8j5GIgbiMvme4Ejhob4LPE71s',
-        PointLatLng(currentLocation.latitude, currentLocation.longitude),
-        PointLatLng(
-            destinationLocation.latitude, destinationLocation.longitude));
+    pointsList = UtilsPoints.getPoints(widget.selectedCategory.number);
+    LatLng saver;
+    LatLng destination;
+    setState(() {
+      for (int i = 0; i < pointsList.length; i++) {
+        if (i == 0) {
+          saver = pointsList[i].coordinates;
+        }
+        if (i > 0) {
+          destination = pointsList[i].coordinates;
+          result = setMultiplePolylines(saver, destination);
+          if (result.status == 'OK') {
+            result.points.forEach((PointLatLng point) {
+              polylineCoordinates.add(LatLng(point.latitude, point.longitude));
+            });
+          }
+        }
+      }
 
-    if (result.status == 'OK') {
-      result.points.forEach((PointLatLng point) {
-        polylineCoordinates.add(LatLng(point.latitude, point.longitude));
-      });
+      _polylines.add(Polyline(
+          width: 5,
+          polylineId: PolylineId('polyLine'),
+          color: AppColors.MAIN_COLOR,
+          points: polylineCoordinates));
 
-      setState(() {
-        _polylines.add(Polyline(
-            width: 5,
-            polylineId: PolylineId('polyLine'),
-            color: Colors.blue,
-            points: polylineCoordinates));
-      });
-    }
+      saver = destinationLocation;
+    });
   }
 }

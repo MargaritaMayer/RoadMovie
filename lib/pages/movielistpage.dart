@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_4/helpers/appcolors.dart';
 import 'package:flutter_application_4/helpers/utils.dart';
 import 'package:flutter_application_4/models/category.dart';
 import 'package:flutter_application_4/pages/mappage.dart';
-import 'package:flutter_application_4/pages/selectedmoviepage.dart';
-import 'package:flutter_application_4/helpers/iconhelper.dart';
 import 'package:flutter_application_4/widgets/moviecard.dart';
 
 class CategoryListPage extends StatelessWidget {
@@ -12,16 +11,19 @@ class CategoryListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
-      appBar: AppBar(),
       body: Container(
+        color: AppColors.NEXT_COLOR,
         child:
             Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-          Padding(
-              padding: const EdgeInsets.only(top: 10, bottom: 10),
-              child: Text('Select a movie',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.black, fontSize: 25))),
+          SizedBox(height: 20),
+          const Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 0),
+              child: Text('    Select a movie:',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontFamily: 'Futura',
+                      color: Colors.black,
+                      fontSize: 25))),
           Expanded(
             child: ListView.builder(
               itemCount: categories.length,
@@ -33,8 +35,8 @@ class CategoryListPage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => MapPage(
-                                  // selectedCategory:
-                                  // Utils.getMockedCategories()[index],
+                                    selectedCategory:
+                                        Utils.getMockedCategories()[index],
                                   )));
                     });
               },

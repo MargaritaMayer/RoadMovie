@@ -34,6 +34,9 @@ dependencies:
   flutter_polyline_points: ^0.2.4
   geolocator: ^5.3.1
   location_permissions: 3.0.0
+  google_fonts: 2.1.0
+  auto_size_text_field: ^1.0.1
+  dcdg: ^3.1.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -80,11 +83,17 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  fonts:
+     - family: Futura
+       fonts:
+         - asset: assets/fonts/FuturaDemiC.ttf
+     - family: Chango
+       fonts:
+         - asset: assets/fonts/Chango-Regular.ttf
+     - family: Disket
+       fonts:
+         - asset: assets/fonts/Disket-Mono-Bold.ttf
+         #- asset: assets/fonts/Disket-Mono-Regular.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

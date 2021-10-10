@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/models/category.dart';
-import 'package:flutter_application_4/widgets/movieicon.dart';
 
 class MovieCard extends StatelessWidget {
   Category category;
@@ -14,7 +13,7 @@ class MovieCard extends StatelessWidget {
           this.onCardClick();
         },
         child: Container(
-            margin: EdgeInsets.all(20),
+            margin: EdgeInsets.only(top: 0.0, left: 20, right: 20, bottom: 20),
             height: 150,
             child: Stack(children: [
               Positioned.fill(
@@ -31,7 +30,7 @@ class MovieCard extends StatelessWidget {
                   child: Container(
                     height: 120,
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(20),
                             bottomRight: Radius.circular(20)),
                         gradient: LinearGradient(
@@ -49,7 +48,10 @@ class MovieCard extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(this.category.name,
-                          style: TextStyle(color: Colors.white, fontSize: 25))
+                          style: const TextStyle(
+                              fontFamily: 'Futura',
+                              color: Colors.white,
+                              fontSize: 23))
                     ],
                   ),
                 ),

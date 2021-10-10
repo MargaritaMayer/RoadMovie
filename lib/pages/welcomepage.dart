@@ -9,14 +9,9 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      color: Colors.black,
+      color: AppColors.NEXT_COLOR,
       child: Stack(
         children: [
-          Positioned.fill(
-              child: Opacity(
-                  opacity: 0.3,
-                  child:
-                      Image.asset('assets/images/map.png', fit: BoxFit.cover))),
           Center(
               child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -25,61 +20,58 @@ class WelcomePage extends StatelessWidget {
               Center(
                   child: ClipOval(
                 child: Container(
-                    width: 180,
-                    height: 180,
-                    color: AppColors.MAIN_COLOR,
+                    width: 220,
+                    height: 220,
+                    color: Colors.transparent,
                     alignment: Alignment.center,
-                    child:
-                        Icon(Icons.favorite, color: Colors.white, size: 100)),
+                    child: Image.asset('assets/images/welcome.png')),
               )),
-              SizedBox(height: 50),
-              Text('Welcome to RoadMovie!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.blue,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold)),
-              SizedBox(height: 50),
-              Text('purpose of the app',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.blue,
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold)),
-              SizedBox(height: 30),
-              Material(
-                  color: Colors.amber,
-                  child: InkWell(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => CategoryListPage()));
-                      },
-                      child: Container(
-                          padding: const EdgeInsets.all(20),
-                          child: Text(
-                            'Go choose a movie to open its route',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
-                          ))))
-
-              // Padding(
-              //     padding: const EdgeInsets.all(20),
-              //     child: FlatButton(
-              //       color: Colors.green,
-              //       padding: EdgeInsets.all(25),
-              //       child: Text('Go choose a movie to open its route'),
-              //       onPressed: () {
-              //         Navigator.push(
-              //             context,
-              //             MaterialPageRoute(
-              //                 builder: (context) => CategoryListPage()));
-              //       },
-              //     ))
+              SizedBox(height: 20),
+              Container(
+                  alignment: Alignment.center,
+                  width: 100,
+                  child: Column(
+                    children: [
+                      Text('ROAD\nMOVIE',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Futura',
+                            color: AppColors.LAST_COLOR,
+                            fontSize: 50,
+                          )),
+                      SizedBox(height: 20),
+                      Text('Feel as you are\nthe main hero\nof the movie',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontFamily: 'Futura',
+                            color: AppColors.LAST_COLOR,
+                            fontSize: 20,
+                          )),
+                      SizedBox(height: 70),
+                      Material(
+                          color: AppColors.MAIN_COLOR,
+                          child: InkWell(
+                              borderRadius: BorderRadius.circular(20),
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            CategoryListPage()));
+                              },
+                              child: Container(
+                                  padding: const EdgeInsets.all(20),
+                                  child: Text(
+                                    ' START    ',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        fontFamily: 'Futura',
+                                        color: AppColors.LAST_COLOR,
+                                        fontSize: 25,
+                                        fontWeight: FontWeight.bold),
+                                  ))))
+                    ],
+                  ))
             ],
           ))
         ],

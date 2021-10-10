@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_4/pages/movielistpage.dart';
 import 'package:flutter_application_4/pages/splashpage.dart';
 import 'package:flutter_application_4/pages/welcomepage.dart';
+import 'package:dcdg/dcdg.dart';
 
 void main() {
   runApp(MaterialApp(
