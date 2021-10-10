@@ -1,8 +1,5 @@
-# RoadMovie 
+# RoadMovie Documentation
 Authors: Margarita Mayer, Polina Romanenkova
-
-## What is it?
-RoadMovie is an application that allows people who are in Moscow to explore the filming locations of Moscow films.
 
 ## Project glossary:
 In the glossary you can find the working definitions for the RoadMovie application.
@@ -24,27 +21,21 @@ In the glossary you can find the working definitions for the RoadMovie applicati
 -   Flutter - a development kit and open-source framework for building Android mobile apps.
 -   Dart - the programming language used to code Flutter apps.
 
-Stakeholders:
-Developers
+## Stakeholders:
+1. Developers
 Responsibilities:
-Developing an app
-Maintainers
+-   Developing an app
+2. Maintainers
 Responsibilities:
-Test the system, check it for errors
-Fix mistakes, keep the system working
-Users
+-   Test the system, check it for errors
+-   Fix mistakes, keep the system working
+3.Users
 Responsibilities:
-Use the app
-Give feedback if they would like to
+-   Use the app
+-   Give feedback if they would like to
 
-User stories:
-
-User Type
-
-User Story Title
-
-User stories
-
+## User stories
+![2](https://user-images.githubusercontent.com/69847456/136710937-553024d3-ee4d-467e-8844-7ddba623fb3a.png)
 
 
 
