@@ -34,8 +34,7 @@ You can read more documentation about the project using this [link](https://docs
 ## Class Diagram
 
 ## Sequence Diagram
-![imgonline-com-ua-Resize-96igZ8jHOE6jj](https://user-images.githubusercontent.com/69847456/136694659-0c3cea76-97e7-44ff-bc53-3b68f86ee7e6.jpg)
-
+![imgonline-com-ua-Resize-wpknnBoZkG](https://user-images.githubusercontent.com/69847456/136694708-9726ecc1-10f6-4639-965a-c910d872d99a.jpg)
 
 ## Static view Diagram
 ![1](https://user-images.githubusercontent.com/69847456/136613803-9edded63-893b-4862-ba57-51f54cb8cf21.png)
