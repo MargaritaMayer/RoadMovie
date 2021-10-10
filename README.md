@@ -7,7 +7,6 @@ There are many film fans in Russia who love films made in Moscow. Many of the fa
 
 ## Features
 -   you can select the film you are interested in from the list
--   you can choose to route through the scene of the film
 -   you can learn more about the shooting and the scene of each shot
 
 ## For Whom
