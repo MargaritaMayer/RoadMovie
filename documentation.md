@@ -23,14 +23,16 @@ In the glossary you can find the working definitions for the RoadMovie applicati
 
 ## Stakeholders:
 1. Developers
+
 Responsibilities:
 -   Developing an app
 2. Maintainers
+
 Responsibilities:
 -   Test the system, check it for errors
 -   Fix mistakes, keep the system working
-
 3.Users
+
 Responsibilities:
 -   Use the app
 -   Give feedback if they would like to
