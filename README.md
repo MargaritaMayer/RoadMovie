@@ -39,7 +39,7 @@ You can read more documentation about the project using this [link](https://docs
 ## Static view Diagram
 ![1](https://user-images.githubusercontent.com/69847456/136613803-9edded63-893b-4862-ba57-51f54cb8cf21.png)
 ## Dynamic view Diagram
-![12](https://user-images.githubusercontent.com/69847456/136620069-c108a7db-b6c8-4337-ac8e-7ee20bdbd327.png)
+![imgonline-com-ua-Resize-hj4cC6Acy4](https://user-images.githubusercontent.com/69847456/136694755-5caf3a96-6edd-4149-97c5-367262c7e077.jpg)
 
 ## Contribution
 Feel free to open a pull request, suggest a feature, or report a bug by creating an issue
