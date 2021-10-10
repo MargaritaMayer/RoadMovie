@@ -7,8 +7,6 @@ RoadMovie is an application that allows people who are in Moscow to explore the 
 
 ## Table of Contents
 
-
-
 ## Motivation
 There are many film fans in Russia who love films made in Moscow. Many of the fans would be interested in exploring the filming locations of interesting shots of their favorite film, walking along the route of the most important scenes. It's hard to do it yourself: you have to search on your own on the Internet in which part of Moscow each scene was filmed. Our app solves this problem for the user, and thus offers a simple way to explore the filming locations of Moscow movies.
 
@@ -33,9 +31,11 @@ Use our app if you like to:
 ## Documentation
 You can read more documentation about the project using this [link](https://docs.google.com/document/d/1J3uiANWerFxjVFidI1HKw_nZxwh-PrAqBGSBybsXumU/edit?usp=sharing)
 
+## Class Diagram
 
 ## Sequence Diagram
-![0_0](https://user-images.githubusercontent.com/69847456/136694550-62df2de9-1e4d-46b0-b3f8-d33d0d576347.png)
+![imgonline-com-ua-Resize-96igZ8jHOE6jj](https://user-images.githubusercontent.com/69847456/136694659-0c3cea76-97e7-44ff-bc53-3b68f86ee7e6.jpg)
+
 
 ## Static view Diagram
 ![1](https://user-images.githubusercontent.com/69847456/136613803-9edded63-893b-4862-ba57-51f54cb8cf21.png)
@@ -57,6 +57,4 @@ Margarita Mayer
 - github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 
 Polina Romanenkova
-
-
 - github: [@stereopolina](https://github.com/stereopolina)
