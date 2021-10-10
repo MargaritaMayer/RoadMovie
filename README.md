@@ -14,6 +14,25 @@ Use our app if:
 -   you have your favorite movies shot in Moscow
 -   you are in Moscow
 
+## Installation steps
+1. Download contents of the repository
+2. Change <YOUR_API> in android/app/src/main/AndroidManifest.xml on row 8 to Your Google API, 
+3. Change <YOUR_API> in ios/Runner/AppDelegate.swift on row 11 to Your Google API, 
+4. Change <YOUR_API> in lib/pages/mappage.dartt on row 13 to Your Google API
+If you do not know, how to get google API for usage in applications, here are useful resources:
+https://cloud.google.com/docs/authentication/api-keys
+https://www.youtube.com/watch?v=OGTG1l7yin4
+https://www.youtube.com/watch?v=iM12nF0tBuM
+Note: for this project you have to have a billing account and for your API Maps SDK for Android and Directions API have to be enabled. 
+If you do not know, how to do that, follow these links:
+https://developers.google.com/maps/documentation/javascript/directions
+https://www.youtube.com/watch?v=2_HZObVbe-g
+5. Open the folder in a any IDE for Flutter and Dart usage, we suggest Android Studio and VS Code.
+6. If you are not familiar with opening a project in any of these applications, use following links:
+https://www.youtube.com/watch?v=g3rm0lxX6Eg
+https://www.youtube.com/watch?v=UE1KgspvE4E
+
+
 ## Demo 
 
 ## Built With
@@ -24,18 +43,6 @@ Use our app if:
 
 ## Documentation
 You can read more documentation about the project using this [link](https://github.com/MargaritaMayer/RoadMovie/blob/main/RoadMovie.pdf)
-
-It containing:
--   Project Glossary
--   Information about stakeholders
--   User Stories
--   Non-functional requirements
--   Information about graphical design
--   Information about SOLID principles in our project
--   Information about Design Patterns in our project
--   Task Flow Diagram
--   Information about future changes in our project
--   Version History
 
 ## UML Class Diagram
 You can find Class Diagram [here]
