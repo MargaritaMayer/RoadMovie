@@ -35,7 +35,7 @@ You can read more documentation about the project using this [link](https://docs
 
 
 ## Sequence Diagram
-![imgonline-com-ua-Resize-wsxhbFeRoN5EMSys](https://user-images.githubusercontent.com/69847456/136557916-c4df551a-9c51-4bc3-96e5-ec3acc0033fe.jpg)
+![0_0](https://user-images.githubusercontent.com/69847456/136694550-62df2de9-1e4d-46b0-b3f8-d33d0d576347.png)
 
 ## Static view Diagram
 ![1](https://user-images.githubusercontent.com/69847456/136613803-9edded63-893b-4862-ba57-51f54cb8cf21.png)
