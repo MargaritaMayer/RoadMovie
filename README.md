@@ -8,9 +8,9 @@ RoadMovie is an application that allows people who are in Moscow to explore the 
 There are many film fans in Russia who love films made in Moscow. Many of the fans would be interested in exploring the filming locations of interesting shots of their favorite film, walking along the route of the most important scenes. It's hard to do it yourself: you have to search on your own on the Internet in which part of Moscow each scene was filmed. Our app solves this problem for the user, and thus offers a simple way to explore the filming locations of Moscow movies.
 
 ## Features
-- you can select the film you are interested in from the list
-- you can choose to route through the scene of the film
-- you can learn more about the shooting and the scene of each shot
+-...you can select the film you are interested in from the list
+-...you can choose to route through the scene of the film
+-...you can learn more about the shooting and the scene of each shot
 
 ## For Whom
 Use our app if you like to:
