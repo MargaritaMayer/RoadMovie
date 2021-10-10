@@ -49,8 +49,8 @@ The project is made as a part of Software Systems Analysis and Design Course (S2
 
 Margarita Mayer
 
--...github: [@MargaritaMayer](https://github.com/MargaritaMayer)
+-   github: [@MargaritaMayer](https://github.com/MargaritaMayer)
 
 Polina Romanenkova
 
--..github: [@stereopolina](https://github.com/stereopolina)
+-   github: [@stereopolina](https://github.com/stereopolina)
