@@ -53,4 +53,4 @@ Margarita Mayer
 
 Polina Romanenkova
 
--...github: [@stereopolina](https://github.com/stereopolina)
+-..github: [@stereopolina](https://github.com/stereopolina)
