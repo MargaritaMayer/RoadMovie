@@ -31,9 +31,9 @@ Use our app if you like to:
 ## Documentation
 You can read more documentation about the project using this [link](https://docs.google.com/document/d/1J3uiANWerFxjVFidI1HKw_nZxwh-PrAqBGSBybsXumU/edit?usp=sharing)
 
-## Class Diagram
+## UML Class Diagram
 
-## Sequence Diagram
+## UML Sequence Diagram
 ![imgonline-com-ua-Resize-wpknnBoZkG](https://user-images.githubusercontent.com/69847456/136694708-9726ecc1-10f6-4639-965a-c910d872d99a.jpg)
 
 ## Static view Diagram
