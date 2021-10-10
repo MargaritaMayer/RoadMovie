@@ -24,6 +24,17 @@ Use our app if:
 
 ## Documentation
 You can read more documentation about the project using this [link](https://docs.google.com/document/d/1J3uiANWerFxjVFidI1HKw_nZxwh-PrAqBGSBybsXumU/edit?usp=sharing)
+It containing:
+-   Project Glossary
+-   Information about stakeholders
+-   User Stories
+-   Non-functional requirements
+-   Information about graphical design
+-   Information about SOLID principles in our project
+-   Information about Design Patterns in our project
+-   Task Flow Diagram
+-   Information about future changes in our project
+-   Version History
 
 ## UML Class Diagram
 You can find Class Diagram [here]
