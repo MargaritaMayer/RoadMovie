@@ -15,7 +15,7 @@ Use our app if:
 -   you are in Moscow
 
 ## Demo 
-
+You can download demo using this [link](https://github.com/MargaritaMayer/RoadMovie/blob/main/demo.mp4)
 ## Built With
 -   Flutter: UI cross platform applications for Android, IOS , and web
 -   Visual Studio Code and Android Studio are used as an IDE
