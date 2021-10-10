@@ -22,12 +22,12 @@ In the glossary you can find the working definitions for the RoadMovie applicati
 -   Dart - the programming language used to code Flutter apps.
 
 ## Stakeholders:
-Developers.
+Developers
 
 Responsibilities:
 -   Developing an app
 
-Maintainers.
+Maintainers
 
 Responsibilities:
 -   Test the system, check it for errors
