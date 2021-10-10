@@ -21,6 +21,22 @@ Use our app if:
 -   Visual Studio Code and Android Studio are used as an IDE
 
 ## Setup
+1. Download contents of the repository
+2. Change <YOUR_API> in android/app/src/main/AndroidManifest.xml on row 8 to Your Google API, 
+3. Change <YOUR_API> in ios/Runner/AppDelegate.swift on row 11 to Your Google API, 
+4. Change <YOUR_API> in lib/pages/mappage.dartt on row 13 to Your Google API
+If you do not know, how to get google API for usage in applications, here are useful resources:
+[1](https://cloud.google.com/docs/authentication/api-keys),
+[2](https://www.youtube.com/watch?v=OGTG1l7yin4),
+[3](https://www.youtube.com/watch?v=iM12nF0tBuM).
+Note: for this project you have to have a billing account and for your API Maps SDK for Android and Directions API have to be enabled. 
+If you do not know, how to do that, follow these links:
+[1](https://developers.google.com/maps/documentation/javascript/directions),
+[2](https://www.youtube.com/watch?v=2_HZObVbe-g).
+5. Open the folder in a any IDE for Flutter and Dart usage, we suggest Android Studio and VS Code.
+6. If you are not familiar with opening a project in any of these applications, use following links:
+[1](https://www.youtube.com/watch?v=g3rm0lxX6Eg)
+[2](https://www.youtube.com/watch?v=UE1KgspvE4E)
 
 ## Documentation
 You can read more documentation about the project using this [link](https://github.com/MargaritaMayer/RoadMovie/blob/main/RoadMovie.pdf)
