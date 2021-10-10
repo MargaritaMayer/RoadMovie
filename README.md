@@ -11,7 +11,7 @@ There are many film fans in Russia who love films made in Moscow. Many of the fa
 -   you can learn more about the shooting and the scene of each shot
 
 ## For Whom
-Use our app if you like to:
+Use our app if:
 -   you have your favorite movies shot in Moscow
 -   you are in Moscow
 
